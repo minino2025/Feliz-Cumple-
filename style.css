@@ -1,0 +1,52 @@
+body {
+    background:linear-gradient(rgb(0, 102, 255),rgb(0, 255, 221));
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    font-family:cursive;
+    touch-action: manipulation;
+
+h1{
+    font-size: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+}
+
+#lluvia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.billete{
+    position: absolute;
+    pointer-events: auto;
+    top: -50px;
+    width: 200px;
+    animation: caer 5s linear infinite;
+}
+
+@keyframes caer {
+ from{
+    transform: translateY(0);
+ }
+ to{
+    transform: translateY(100vh);
+ }
+}
